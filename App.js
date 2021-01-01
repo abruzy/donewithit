@@ -1,8 +1,39 @@
 import React from "react";
+import { Button, Text } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
 
-import ListingEditScreen from "./app/screens/ListingEditScreen";
-import MessagesScreen from "./app/screens/MessagesScreen";
+import Screen from "./app/components/Screen";
+
+const Tweets = ({ navigation }) => (
+  <Screen>
+    <Text>Tweets</Text>
+    <Button
+      title="View tweet"
+      onPress={() => navigation.navigate("TweetDetails")}
+    />
+  </Screen>
+);
+
+const TweetDetails = () => (
+  <Screen>
+    <Text>Tweet Details</Text>
+  </Screen>
+);
+
+const Stack = createStackNavigator();
+
+const StackNavigator = () => (
+  <Stack.Navigator initialRouteName="Tweets">
+    <Stack.Screen name="TweetDetails" component={TweetDetails} />
+    <Stack.Screen name="Tweets" component={Tweets} />
+  </Stack.Navigator>
+);
 
 export default function App() {
-  return <ListingEditScreen />;
+  return (
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
+  );
 }

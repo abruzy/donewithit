@@ -11,16 +11,15 @@ import {
 const initialMessages = [
   {
     id: 1,
-    title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis maximus mi, eu rhoncus nulla. Nullam ex nisl, elementum id vulputate ut, ornare vel lectus. Aenean convallis, massa vel finibus iaculis, ipsum metus eleifend erat, a egestas lorem nibh id ligula. Aliquam consectetur elit eget quam efficitur",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis maximus mi, eu rhoncus nulla. Nullam ex nisl, elementum id vulputate ut, ornare vel lectus. Aenean convallis, massa vel finibus iaculis, ipsum metus eleifend erat, a egestas lorem nibh id ligula. Aliquam consectetur elit eget quam efficitur",
+    title: "Mosh Hamedani",
+    description: "Hey! Is this item still available?",
     image: require("../assets/mosh.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title: "Mosh Hamedani",
+    description:
+      "I'm interested in this item. When will you be able to post it?",
     image: require("../assets/mosh.jpg"),
   },
 ];
